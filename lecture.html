@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petroleum Lecture - Текст лекции</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Переключатель темы -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">⚙️ Petroleum Lecture</a>
+            <nav class="header-nav">
+                <button id="theme-toggle" class="btn-icon" title="Переключить тему">
+                    🌙
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="lecture-wrapper">
+            <!-- Кнопки переключения языка -->
+            <div class="language-switcher">
+                <button class="lang-btn lang-btn-active" data-lang="en">🇬🇧 English</button>
+                <button class="lang-btn" data-lang="ru">🇷🇺 Русский</button>
+            </div>
+
+            <!-- Контейнер для текста лекции -->
+            <div class="lecture-content">
+                <!-- МЕСТО ДЛЯ ЗАГРУЗКИ ТЕКСТА НА АНГЛИЙСКОМ -->
+                <div id="lecture-en" class="lecture-text active">
+                    <p>Loading lecture content...</p>
+                </div>
+
+                <!-- МЕСТО ДЛЯ ЗАГРУЗКИ ТЕКСТА НА РУССКОМ -->
+                <div id="lecture-ru" class="lecture-text">
+                    <p>Загрузка содержимого лекции...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>&copy; 2026 Petroleum Lecture. Размещено на GitHub Pages</p>
+    </footer>
+
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/lecture-loader.js"></script>
+</body>
+</html>
