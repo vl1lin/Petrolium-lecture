@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petroleum Lecture - Словарь</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Переключатель темы -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">⚙️ Petroleum Lecture</a>
+            <nav class="header-nav">
+                <button id="theme-toggle" class="btn-icon" title="Переключить тему">
+                    🌙
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="dictionary-section">
+            <h2>Словарь терминов</h2>
+            
+            <!-- БЛОК PYSCRIPT ДЛЯ ЛОГИКИ ПОИСКА -->
+            <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+            <py-config>
+                packages = ["regex"]
+            </py-config>
+            
+            <!-- Инструменты поиска и фильтрации -->
+            <div class="search-panel">
+                <!-- МЕСТО ДЛЯ PYSCRIPT: Поле поиска -->
+                <div class="search-group">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Поиск слова (на английском или русском)..."
+                        autocomplete="off"
+                    >
+                    <button id="search-btn" class="btn-primary">🔍 Поиск</button>
+                </div>
+
+                <!-- Фильтрация по категориям -->
+                <div class="filter-group">
+                    <label for="category-filter">Категория:</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">Все категории</option>
+                        <!-- МЕСТО ДЛЯ PYSCRIPT: Категории загружаются сюда -->
+                    </select>
+                </div>
+
+                <!-- Сортировка -->
+                <div class="sort-group">
+                    <label for="sort-select">Сортировка:</label>
+                    <select id="sort-select" class="sort-select">
+                        <option value="original">По порядку</option>
+                        <option value="alpha-en">По алфавиту (EN)</option>
+                        <option value="alpha-ru">По алфавиту (RU)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- МЕСТО ДЛЯ PYSCRIPT: Результаты поиска отображаются здесь -->
+            <div id="dictionary-cards" class="dictionary-grid">
+                <p>Загрузка словаря...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>&copy; 2026 Petroleum Lecture. Размещено на GitHub Pages</p>
+    </footer>
+
+    <script src="js/theme-switcher.js"></script>
+    <!-- PYSCRIPT ЛОГИКА ПОИСКА -->
+    <script src="js/dictionary-pyscript-handler.js"></script>
+</body>
+</html>
