@@ -1,0 +1,154 @@
+{
+  "vocabulary": [
+    {
+      "id": 1,
+      "english": "petroleum",
+      "russian": "нефть",
+      "pronunciation": "pə-ˈtrō-ləm",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "A naturally occurring flammable liquid found in sedimentary rock",
+        "ru": "Природная горючая жидкость, обнаруживаемая в осадочных породах"
+      },
+      "example": {
+        "en": "Petroleum is the primary source of energy in many countries.",
+        "ru": "Нефть является основным источником энергии во многих странах."
+      }
+    },
+    {
+      "id": 2,
+      "english": "crude oil",
+      "russian": "сырая нефть",
+      "pronunciation": "krüd ȯil",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Unrefined oil as it comes from the ground",
+        "ru": "Необработанная нефть, такая какая выходит из скважины"
+      },
+      "example": {
+        "en": "Crude oil must be refined before it can be used.",
+        "ru": "Сырая нефть должна быть переработана перед использованием."
+      }
+    },
+    {
+      "id": 3,
+      "english": "drilling",
+      "russian": "бурение",
+      "pronunciation": "ˈdri-liŋ",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "The process of making a hole in the ground to extract oil and gas",
+        "ru": "Процесс создания скважины в земле для извлечения нефти и газа"
+      },
+      "example": {
+        "en": "Offshore drilling requires specialized equipment.",
+        "ru": "Морское бурение требует специализированного оборудования."
+      }
+    },
+    {
+      "id": 4,
+      "english": "extraction",
+      "russian": "добыча",
+      "pronunciation": "ik-ˈstrak-shən",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "The process of removing oil and gas from beneath the earth's surface",
+        "ru": "Процесс извлечения нефти и газа из-под поверхности земли"
+      },
+      "example": {
+        "en": "Oil extraction is a complex industrial process.",
+        "ru": "Добыча нефти - это сложный промышленный процесс."
+      }
+    },
+    {
+      "id": 5,
+      "english": "refinery",
+      "russian": "нефтеперерабатывающий завод",
+      "pronunciation": "ri-ˈfī-nə-rē",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "An industrial plant where crude oil is processed into usable products",
+        "ru": "Промышленный завод, где сырая нефть перерабатывается в полезные продукты"
+      },
+      "example": {
+        "en": "The refinery processes thousands of barrels daily.",
+        "ru": "Завод перерабатывает тысячи баррелей ежедневно."
+      }
+    },
+    {
+      "id": 6,
+      "english": "fossil fuel",
+      "russian": "ископаемое топливо",
+      "pronunciation": "ˈfä-səl ˈfyül",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A fuel formed from the remains of ancient organisms",
+        "ru": "Топливо, образованное из остатков древних организмов"
+      },
+      "example": {
+        "en": "Fossil fuels are the primary energy source worldwide.",
+        "ru": "Ископаемые топлива - основной источник энергии в мире."
+      }
+    },
+    {
+      "id": 7,
+      "english": "natural gas",
+      "russian": "природный газ",
+      "pronunciation": "ˈna-chə-rəl ˈgas",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A gaseous fossil fuel consisting mainly of methane",
+        "ru": "Газообразное ископаемое топливо, состоящее в основном из метана"
+      },
+      "example": {
+        "en": "Natural gas is cleaner than coal.",
+        "ru": "Природный газ чище, чем уголь."
+      }
+    },
+    {
+      "id": 8,
+      "english": "pipeline",
+      "russian": "трубопровод",
+      "pronunciation": "ˈpīp-ˌlīn",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "A system of pipes for transporting oil or gas over long distances",
+        "ru": "Система труб для транспортировки нефти или газа на большие расстояния"
+      },
+      "example": {
+        "en": "The pipeline carries oil across several countries.",
+        "ru": "Трубопровод доставляет нефть через несколько стран."
+      }
+    },
+    {
+      "id": 9,
+      "english": "exploration",
+      "russian": "разведка",
+      "pronunciation": "ˌek-splə-ˈrā-shən",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "The search for new sources of oil and gas",
+        "ru": "Поиск новых источников нефти и газа"
+      },
+      "example": {
+        "en": "Oil exploration involves geological surveys and seismic testing.",
+        "ru": "Разведка нефти включает геологические обследования и сейсмическое тестирование."
+      }
+    },
+    {
+      "id": 10,
+      "english": "offshore",
+      "russian": "морской",
+      "pronunciation": "ˈȯf-ˌshor",
+      "partOfSpeech": "adjective",
+      "definition": {
+        "en": "Located or operating in the sea, at some distance from the shore",
+        "ru": "Расположенный или работающий в море, на некотором расстоянии от берега"
+      },
+      "example": {
+        "en": "Offshore platforms are used for underwater oil production.",
+        "ru": "Морские платформы используются для подводной добычи нефти."
+      }
+    }
+  ]
+}
