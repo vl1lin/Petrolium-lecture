@@ -7,26 +7,74 @@ const langButtons = document.querySelectorAll('.lang-btn');
 const lectureTexts = document.querySelectorAll('.lecture-text');
 
 // ============================================
-// МЕСТО ДЛЯ PYSCRIPT: Инициализация данных
+// MARKDOWN ПРЕОБРАЗОВАТЕЛЬ
 // ============================================
 
-// Загружаем лекции из JSON
-async function loadLectures() {
+function markdownToHtml(markdown) {
+    let html = markdown;
+    
+    // Заголовки (H1 - H6)
+    html = html.replace(/^### (.*?)$/gm, '<h3>$1</h3>');
+    html = html.replace(/^## (.*?)$/gm, '<h2>$1</h2>');
+    html = html.replace(/^# (.*?)$/gm, '<h1>$1</h1>');
+    
+    // Жирный текст
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/__(.+?)__/g, '<strong>$1</strong>');
+    
+    // Курсив
+    html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+    html = html.replace(/_(.*?)_/g, '<em>$1</em>');
+    
+    // Код (одна строка)
+    html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+    
+    // Блок кода (многострочный)
+    html = html.replace(/```(.*?)```/gs, '<pre><code>$1</code></pre>');
+    
+    // Списки (ненумерованные)
+    html = html.replace(/^\- (.*?)$/gm, '<li>$1</li>');
+    html = html.replace(/(<li>.*?<\/li>)/s, '<ul>$1</ul>');
+    html = html.replace(/<\/ul>\n<ul>/g, '');
+    
+    // Таблицы (простые)
+    html = html.replace(/\| (.*?) \|/g, '<tr><td>$1</td></tr>');
+    
+    // Ссылки
+    html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+    
+    // Разрывы строк
+    html = html.replace(/\n\n/g, '</p><p>');
+    html = '<p>' + html + '</p>';
+    
+    // Очищаем пустые теги
+    html = html.replace(/<p><\/p>/g, '');
+    
+    return html;
+}
+
+// ============================================
+// ЗАГРУЗКА ЛЕКЦИИ ИЗ JSON
+// ============================================
+
+async function loadLecture() {
     try {
-        const response = await fetch('data/lectures.json');
+        const response = await fetch('data/lecture.json');
         const data = await response.json();
         
-        // Вставляем английский текст
-        document.getElementById('lecture-en').innerHTML = data.en;
+        // Конвертируем Markdown в HTML
+        const htmlEn = markdownToHtml(data.lecture.en);
+        const htmlRu = markdownToHtml(data.lecture.ru);
         
-        // Вставляем русский текст
-        document.getElementById('lecture-ru').innerHTML = data.ru;
+        // Вставляем преобразованный текст
+        document.getElementById('lecture-en').innerHTML = htmlEn;
+        document.getElementById('lecture-ru').innerHTML = htmlRu;
         
-        console.log('Лекции успешно загружены');
+        console.log('✓ Лекция успешно загружена и преобразована');
     } catch (error) {
-        console.error('Ошибка при загрузке лекций:', error);
-        document.getElementById('lecture-en').innerHTML = '<p>Ошибка при загрузке контента.</p>';
-        document.getElementById('lecture-ru').innerHTML = '<p>Ошибка при загрузке контента.</p>';
+        console.error('✗ Ошибка при загрузке лекции:', error);
+        document.getElementById('lecture-en').innerHTML = '<p style="color: red;">Ошибка при загрузке контента. Попробуйте позже.</p>';
+        document.getElementById('lecture-ru').innerHTML = '<p style="color: red;">Ошибка при загрузке контента. Попробуйте позже.</p>';
     }
 }
 
@@ -72,6 +120,6 @@ function restoreLanguage() {
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadLectures();
+    loadLecture();
     restoreLanguage();
 });
