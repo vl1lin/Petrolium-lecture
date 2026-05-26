@@ -43,6 +43,11 @@ async function loadLecture() {
         document.getElementById('lecture-en').innerHTML = htmlEn;
         document.getElementById('lecture-ru').innerHTML = htmlRu;
 
+        // Рендерим LaTeX-формулы через MathJax
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            await window.MathJax.typesetPromise();
+        }
+
         console.log('✓ Лекция успешно загружена и преобразована');
     } catch (error) {
         console.error('✗ Ошибка при загрузке лекции:', error);
