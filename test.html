@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petroleum Lecture - Тест</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">⚙️ Petroleum Lecture</a>
+            <nav class="header-nav">
+                <button id="theme-toggle" class="btn-icon" title="Переключить тему">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="test-wrapper">
+            <div class="test-header">
+                <h1 class="test-title">Тест: Корреляции для расчёта PVT-свойств нефтей</h1>
+                <p class="test-subtitle">Выберите один правильный вариант ответа для каждого вопроса</p>
+            </div>
+
+            <div id="questions-container"></div>
+
+            <div class="test-actions">
+                <button type="button" id="check-btn" class="btn-primary btn-check">
+                    Проверить ответы
+                </button>
+            </div>
+
+            <div id="results-panel" class="results-panel hidden">
+                <div id="results-score" class="results-score"></div>
+                <button type="button" id="retry-btn" class="btn-primary btn-retry">
+                    Пройти тест заново
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Petroleum Lecture. Размещено на GitHub Pages</p>
+    </footer>
+
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/test.js"></script>
+</body>
+</html>
