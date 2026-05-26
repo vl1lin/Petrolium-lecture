@@ -4,24 +4,26 @@
 // Этот скрипт преобразует markdown файлы в HTML автоматически
 // с поддержкой LaTeX формул и таблиц
 
-// Загружаем внешние библиотеки
-const script1 = document.createElement('script');
-script1.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
-document.head.appendChild(script1);
+// KaTeX CSS
+const katexStyle = document.createElement('link');
+katexStyle.rel = 'stylesheet';
+katexStyle.href = 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css';
+document.head.appendChild(katexStyle);
 
-const script2 = document.createElement('script');
-script2.src = 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js';
-document.head.appendChild(script2);
+// marked.js (v4 — стабильное API)
+const scriptMarked = document.createElement('script');
+scriptMarked.src = 'https://cdn.jsdelivr.net/npm/marked@4/marked.min.js';
+document.head.appendChild(scriptMarked);
 
-const script3 = document.createElement('script');
-script3.src = 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js';
-document.head.appendChild(script3);
-
-// Загружаем стили KaTeX
-const style = document.createElement('link');
-style.rel = 'stylesheet';
-style.href = 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css';
-document.head.appendChild(style);
+// KaTeX → после загрузки KaTeX загружаем auto-render (порядок важен!)
+const scriptKatex = document.createElement('script');
+scriptKatex.src = 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js';
+scriptKatex.onload = function () {
+    const scriptAutoRender = document.createElement('script');
+    scriptAutoRender.src = 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js';
+    document.head.appendChild(scriptAutoRender);
+};
+document.head.appendChild(scriptKatex);
 
 /**
  * Преобразует markdown в HTML с поддержкой таблиц и формул
