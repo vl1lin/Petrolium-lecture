@@ -149,6 +149,486 @@
         "en": "Offshore platforms are used for underwater oil production.",
         "ru": "Морские платформы используются для подводной добычи нефти."
       }
+    },
+    {
+      "id": 11,
+      "english": "PVT properties",
+      "russian": "PVT-свойства (физические свойства нефти)",
+      "pronunciation": "pi-vi-ti ˈprä-pər-tēz",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Physical properties of oil that depend on Pressure, Volume, and Temperature conditions in the reservoir",
+        "ru": "Физические свойства нефти, зависящие от давления, объёма и температуры в пластовых условиях"
+      },
+      "example": {
+        "en": "Accurate PVT properties are essential for reservoir simulation and production forecasting.",
+        "ru": "Точные PVT-свойства необходимы для моделирования пласта и прогнозирования добычи."
+      }
+    },
+    {
+      "id": 12,
+      "english": "bubble point pressure",
+      "russian": "давление насыщения",
+      "pronunciation": "ˈbə-bəl pɔɪnt ˈpre-shər",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Pressure at which the first bubble of gas evolves from oil as pressure decreases",
+        "ru": "Давление, при котором из нефти начинает выделяться первый пузырёк газа при снижении давления"
+      },
+      "example": {
+        "en": "Below the bubble point pressure, massive gas evolution begins and oil properties change significantly.",
+        "ru": "Ниже давления насыщения начинается интенсивное выделение газа, и свойства нефти существенно меняются."
+      }
+    },
+    {
+      "id": 13,
+      "english": "solution gas-oil ratio",
+      "russian": "газосодержание нефти",
+      "pronunciation": "sə-ˈlü-shən gas ȯil ˈrā-shō",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Volume of gas dissolved in one unit of dead oil at standard conditions",
+        "ru": "Объём газа, растворённого в единице дегазированной нефти при стандартных условиях"
+      },
+      "example": {
+        "en": "The solution gas-oil ratio increases with pressure until the bubble point is reached.",
+        "ru": "Газосодержание нефти растёт с увеличением давления до достижения точки насыщения."
+      }
+    },
+    {
+      "id": 14,
+      "english": "oil formation volume factor",
+      "russian": "объёмный коэффициент нефти",
+      "pronunciation": "ȯil fər-ˈmā-shən ˈvä-lyüm ˈfak-tər",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Ratio of oil volume at reservoir conditions to its volume after degassing at surface conditions",
+        "ru": "Отношение объёма нефти в пластовых условиях к её объёму после дегазации в поверхностных условиях"
+      },
+      "example": {
+        "en": "The oil formation volume factor is always greater than 1 because reservoir oil contains dissolved gas.",
+        "ru": "Объёмный коэффициент нефти всегда больше 1, так как пластовая нефть содержит растворённый газ."
+      }
+    },
+    {
+      "id": 15,
+      "english": "live oil",
+      "russian": "живая нефть",
+      "pronunciation": "līv ȯil",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Oil containing dissolved gas under reservoir pressure and temperature conditions",
+        "ru": "Нефть, содержащая растворённый газ при пластовых давлении и температуре"
+      },
+      "example": {
+        "en": "Live oil viscosity can be 10–100 times lower than dead oil viscosity due to dissolved gas.",
+        "ru": "Вязкость живой нефти может быть в 10–100 раз ниже вязкости дегазированной нефти благодаря растворённому газу."
+      }
+    },
+    {
+      "id": 16,
+      "english": "dead oil",
+      "russian": "дегазированная нефть",
+      "pronunciation": "ded ȯil",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Oil from which all dissolved gas has been removed at surface conditions",
+        "ru": "Нефть, из которой удалён весь растворённый газ в поверхностных условиях"
+      },
+      "example": {
+        "en": "Dead oil density is always higher than live oil density because gas is lighter than liquid hydrocarbons.",
+        "ru": "Плотность дегазированной нефти всегда выше плотности живой нефти, так как газ легче жидких углеводородов."
+      }
+    },
+    {
+      "id": 17,
+      "english": "API gravity",
+      "russian": "плотность по API",
+      "pronunciation": "ā-pē-ˈī ˈgra-və-tē",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Standardized measure of petroleum liquid density developed by the American Petroleum Institute",
+        "ru": "Стандартизированная мера плотности нефтепродуктов, разработанная Американским институтом нефти"
+      },
+      "example": {
+        "en": "Light oils have API gravity above 30°, while heavy oils have API gravity below 20°.",
+        "ru": "Лёгкие нефти имеют плотность по API выше 30°, а тяжёлые — ниже 20°."
+      }
+    },
+    {
+      "id": 18,
+      "english": "isothermal compressibility",
+      "russian": "изотермическая сжимаемость",
+      "pronunciation": "ˌī-sə-ˈthər-məl kəm-ˌpre-sə-ˈbi-lə-tē",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Measure of relative volume change of a fluid in response to pressure change at constant temperature",
+        "ru": "Мера относительного изменения объёма жидкости в ответ на изменение давления при постоянной температуре"
+      },
+      "example": {
+        "en": "Above bubble point pressure, oil compressibility is small, approximately 10⁻⁵ psi⁻¹.",
+        "ru": "Выше давления насыщения сжимаемость нефти мала, примерно 10⁻⁵ фунт/дюйм²."
+      }
+    },
+    {
+      "id": 19,
+      "english": "correlation (PVT)",
+      "russian": "корреляция (PVT)",
+      "pronunciation": "ˌkȯr-ə-ˈlā-shən",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "Empirical mathematical expression linking hard-to-measure PVT properties to easily measurable parameters",
+        "ru": "Эмпирическое математическое выражение, связывающее трудноизмеряемые PVT-свойства с легко измеряемыми параметрами"
+      },
+      "example": {
+        "en": "Standing correlation is often used as a benchmark for estimating bubble point pressure of light oils.",
+        "ru": "Корреляция Стэндинга часто используется как эталон для оценки давления насыщения лёгких нефтей."
+      }
+    },
+    {
+      "id": 20,
+      "english": "phase behavior",
+      "russian": "фазовое поведение",
+      "pronunciation": "fāz bi-ˈhā-vyər",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Description of how a fluid system transitions between liquid and gas phases under changing P-T conditions",
+        "ru": "Описание того, как флюидная система переходит между жидкой и газовой фазами при изменении давления и температуры"
+      },
+      "example": {
+        "en": "Understanding phase behavior is critical for designing surface separation facilities.",
+        "ru": "Понимание фазового поведения критически важно для проектирования установок поверхностной сепарации."
+      }
+    },
+    {
+      "id": 21,
+      "english": "undersaturated oil",
+      "russian": "ненасыщенная нефть",
+      "pronunciation": "ˌən-dər-ˈsa-chə-ˌrā-ted ȯil",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Oil at pressure above its bubble point, containing no free gas phase",
+        "ru": "Нефть при давлении выше давления насыщения, не содержащая свободной газовой фазы"
+      },
+      "example": {
+        "en": "First-generation correlations were primarily developed for undersaturated oils.",
+        "ru": "Корреляции первого поколения разрабатывались преимущественно для ненасыщенных нефтей."
+      }
+    },
+    {
+      "id": 22,
+      "english": "specific gravity",
+      "russian": "относительная плотность",
+      "pronunciation": "spə-ˈsi-fik ˈgra-və-tē",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Ratio of the density of a substance to the density of a reference substance (usually water or air)",
+        "ru": "Отношение плотности вещества к плотности эталонного вещества (обычно воды или воздуха)"
+      },
+      "example": {
+        "en": "Gas specific gravity is typically expressed relative to air, where air = 1.0.",
+        "ru": "Относительная плотность газа обычно выражается относительно воздуха, где воздух = 1,0."
+      }
+    },
+    {
+      "id": 23,
+      "english": "reservoir",
+      "russian": "пласт, коллектор",
+      "pronunciation": "ˈre-zər-ˌvwär",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "A subsurface pool of hydrocarbons contained in porous or fractured rock formations",
+        "ru": "Подземное скопление углеводородов, содержащееся в пористых или трещиноватых горных породах"
+      },
+      "example": {
+        "en": "The reservoir pressure affects the flow rate of oil to the wellbore.",
+        "ru": "Пластовое давление влияет на дебит притока нефти к забою скважины."
+      }
+    },
+    {
+      "id": 24,
+      "english": "dissolved gas",
+      "russian": "растворённый газ",
+      "pronunciation": "dɪ-ˈzälvd ˈgas",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Gas that is chemically mixed within crude oil under reservoir pressure and temperature",
+        "ru": "Газ, химически смешанный с сырой нефтью при пластовых давлении и температуре"
+      },
+      "example": {
+        "en": "When pressure drops below bubble point, dissolved gas begins to separate from the oil.",
+        "ru": "При падении давления ниже точки насыщения растворённый газ начинает отделяться от нефти."
+      }
+    },
+    {
+      "id": 25,
+      "english": "multicomponent system",
+      "russian": "многокомпонентная система",
+      "pronunciation": "ˌməl-ti-kəm-ˈpō-nənt ˈsis-təm",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A mixture containing three or more distinct chemical components that interact physically",
+        "ru": "Смесь, содержащая три или более различных химических компонента, которые физически взаимодействуют"
+      },
+      "example": {
+        "en": "Reservoir oil is a multicomponent system including hydrocarbons, nitrogen, CO₂, and H₂S.",
+        "ru": "Пластовая нефть — это многокомпонентная система, включающая углеводороды, азот, CO₂ и H₂S."
+      }
+    },
+    {
+      "id": 26,
+      "english": "hydrocarbons",
+      "russian": "углеводороды",
+      "pronunciation": "ˌhī-drə-ˈkär-bənz",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "Organic compounds consisting entirely of hydrogen and carbon atoms",
+        "ru": "Органические соединения, состоящие исключительно из атомов водорода и углерода"
+      },
+      "example": {
+        "en": "Light hydrocarbons like methane and ethane are the main components of natural gas.",
+        "ru": "Лёгкие углеводороды, такие как метан и этан, являются основными компонентами природного газа."
+      }
+    },
+    {
+      "id": 27,
+      "english": "viscosity",
+      "russian": "вязкость",
+      "pronunciation": "vis-ˈkä-sə-tē",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "A measure of a fluid's resistance to gradual deformation by shear or tensile stress",
+        "ru": "Мера сопротивления жидкости постепенной деформации под действием сдвигающего или растягивающего напряжения"
+      },
+      "example": {
+        "en": "Live oil viscosity can be 10–100 times lower than dead oil viscosity due to dissolved gas.",
+        "ru": "Вязкость живой нефти может быть в 10–100 раз ниже вязкости дегазированной нефти благодаря растворённому газу."
+      }
+    },
+    {
+      "id": 28,
+      "english": "degassing",
+      "russian": "дегазация",
+      "pronunciation": "ˌdē-ˈga-siŋ",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "The process of removing dissolved gases from a liquid, typically by reducing pressure",
+        "ru": "Процесс удаления растворённых газов из жидкости, обычно путём снижения давления"
+      },
+      "example": {
+        "en": "During degassing at surface conditions, the oil volume shrinks significantly.",
+        "ru": "При дегазации в поверхностных условиях объём нефти значительно уменьшается."
+      }
+    },
+    {
+      "id": 29,
+      "english": "standard conditions",
+      "russian": "стандартные условия",
+      "pronunciation": "ˈstan-dərd kən-ˈdi-shənz",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Reference temperature and pressure (usually 60°F and 14.7 psi) used for measuring gas and oil volumes",
+        "ru": "Эталонные температура и давление (обычно 60°F и 14,7 фунт/дюйм²), используемые для измерения объёмов газа и нефти"
+      },
+      "example": {
+        "en": "Solution gas-oil ratio is expressed in standard cubic feet per stock tank barrel.",
+        "ru": "Газосодержание нефти выражается в стандартных кубических футах на баррель нефти в резервуаре."
+      }
+    },
+    {
+      "id": 30,
+      "english": "solubility curve",
+      "russian": "кривая растворимости",
+      "pronunciation": "ˌsä-lə-ˈbi-lə-tē kərv",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Graph showing how the amount of dissolved gas in oil changes with pressure at constant temperature",
+        "ru": "График, показывающий, как количество растворённого газа в нефти изменяется с давлением при постоянной температуре"
+      },
+      "example": {
+        "en": "The solubility curve Rs(P) is essential for predicting gas evolution during production.",
+        "ru": "Кривая растворимости Rs(P) необходима для прогнозирования выделения газа в процессе добычи."
+      }
+    },
+    {
+      "id": 31,
+      "english": "empirical correlation",
+      "russian": "эмпирическая корреляция",
+      "pronunciation": "em-ˈpi-ri-kəl ˌkȯr-ə-ˈlā-shən",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A mathematical relationship derived from experimental data rather than theoretical principles",
+        "ru": "Математическая зависимость, полученная на основе экспериментальных данных, а не теоретических принципов"
+      },
+      "example": {
+        "en": "Standing correlation is an empirical correlation widely used for light oil PVT calculations.",
+        "ru": "Корреляция Стэндинга — это эмпирическая корреляция, широко используемая для расчёта PVT-свойств лёгких нефтей."
+      }
+    },
+    {
+      "id": 32,
+      "english": "regression analysis",
+      "russian": "регрессионный анализ",
+      "pronunciation": "ri-ˈgre-shən ə-ˈna-lə-səs",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Statistical method for estimating relationships among variables based on observed data",
+        "ru": "Статистический метод оценки взаимосвязей между переменными на основе наблюдаемых данных"
+      },
+      "example": {
+        "en": "PVT correlations are developed through regression analysis of laboratory measurements from multiple fields.",
+        "ru": "PVT-корреляции разрабатываются путём регрессионного анализа лабораторных измерений с нескольких месторождений."
+      }
+    },
+    {
+      "id": 33,
+      "english": "bottomhole sample",
+      "russian": "забойная проба",
+      "pronunciation": "ˈbä-təm-ˌhōl ˈsam-pəl",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A representative fluid sample collected directly from the reservoir at bottomhole conditions",
+        "ru": "Представительная проба флюида, отобранная непосредственно из пласта в забойных условиях"
+      },
+      "example": {
+        "en": "Obtaining a high-quality bottomhole sample is critical for accurate PVT analysis.",
+        "ru": "Получение высококачественной забойной пробы критически важно для точного PVT-анализа."
+      }
+    },
+    {
+      "id": 34,
+      "english": "undersaturated oil",
+      "russian": "ненасыщенная нефть",
+      "pronunciation": "ˌən-dər-ˈsa-chə-ˌrā-ted ȯil",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Oil at pressure above its bubble point, containing no free gas phase",
+        "ru": "Нефть при давлении выше давления насыщения, не содержащая свободной газовой фазы"
+      },
+      "example": {
+        "en": "First-generation correlations were primarily developed for undersaturated oils.",
+        "ru": "Корреляции первого поколения разрабатывались преимущественно для ненасыщенных нефтей."
+      }
+    },
+    {
+      "id": 35,
+      "english": "equation of state",
+      "russian": "уравнение состояния",
+      "pronunciation": "i-ˈkwā-zhən əv ˈstāt",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A thermodynamic equation relating state variables such as pressure, volume, and temperature",
+        "ru": "Термодинамическое уравнение, связывающее параметры состояния, такие как давление, объём и температура"
+      },
+      "example": {
+        "en": "All PVT properties are linked through an equation of state or material balance relationship.",
+        "ru": "Все PVT-свойства связаны через уравнение состояния или соотношение материального баланса."
+      }
+    },
+    {
+      "id": 36,
+      "english": "material balance",
+      "russian": "материальный баланс",
+      "pronunciation": "mə-ˈtir-ē-əl ˈba-ləns",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A conservation principle stating that mass entering a system must equal mass leaving plus accumulation",
+        "ru": "Принцип сохранения, согласно которому масса, поступающая в систему, равна массе, выходящей из неё, плюс накопление"
+      },
+      "example": {
+        "en": "Material balance equations are fundamental for reservoir engineering calculations.",
+        "ru": "Уравнения материального баланса являются фундаментальными для расчётов в разработке месторождений."
+      }
+    },
+    {
+      "id": 37,
+      "english": "calibration",
+      "russian": "калибровка, настройка",
+      "pronunciation": "ˌka-lə-ˈbrā-shən",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "The process of adjusting a model or correlation to match observed field data",
+        "ru": "Процесс корректировки модели или корреляции для соответствия наблюдаемым полевым данным"
+      },
+      "example": {
+        "en": "A correlation without local calibration is guessing; with calibration, it becomes an engineering tool.",
+        "ru": "Корреляция без локальной калибровки — это догадка; с калибровкой она становится инженерным инструментом."
+      }
+    },
+    {
+      "id": 38,
+      "english": "extrapolation",
+      "russian": "экстраполяция",
+      "pronunciation": "ik-ˌstra-pə-ˈlā-shən",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "Estimating values beyond the range of observed data, which can lead to significant errors",
+        "ru": "Оценка значений за пределами диапазона наблюдаемых данных, что может привести к значительным ошибкам"
+      },
+      "example": {
+        "en": "Extrapolating a correlation beyond its training range is strictly prohibited.",
+        "ru": "Экстраполяция корреляции за пределы её обучающего диапазона строго запрещена."
+      }
+    },
+    {
+      "id": 39,
+      "english": "reservoir simulator",
+      "russian": "гидродинамическая модель пласта",
+      "pronunciation": "ˈre-zər-ˌvwär ˈsi-myə-ˌlā-tər",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "Computer software that models fluid flow and pressure changes in petroleum reservoirs",
+        "ru": "Компьютерное программное обеспечение, моделирующее движение флюидов и изменение давления в нефтяных пластах"
+      },
+      "example": {
+        "en": "In reservoir simulators like Eclipse, correlations calibrated to field samples are used for PVT calculations.",
+        "ru": "В гидродинамических симуляторах, таких как Eclipse, для PVT-расчётов используются корреляции, откалиброванные по полевым пробам."
+      }
+    },
+    {
+      "id": 40,
+      "english": "asphaltenes",
+      "russian": "асфальтены",
+      "pronunciation": "as-ˈfal-ˌtēnz",
+      "partOfSpeech": "noun",
+      "definition": {
+        "en": "High-molecular-weight polar components of crude oil that can precipitate and cause flow problems",
+        "ru": "Высокомолекулярные полярные компоненты сырой нефти, которые могут выпадать в осадок и вызывать проблемы с потоком"
+      },
+      "example": {
+        "en": "Oils from different basins have different amounts of polar components like resins and asphaltenes.",
+        "ru": "Нефти из разных бассейнов содержат разное количество полярных компонентов, таких как смолы и асфальтены."
+      }
+    },
+    {
+      "id": 41,
+      "english": "volatile oil",
+      "russian": "летучая нефть",
+      "pronunciation": "ˈvä-lə-təl ȯil",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A light oil with high gas-oil ratio that readily vaporizes when pressure is reduced",
+        "ru": "Лёгкая нефть с высоким газосодержанием, которая легко испаряется при снижении давления"
+      },
+      "example": {
+        "en": "Volatile oils require special handling during production due to rapid gas evolution.",
+        "ru": "Летучие нефти требуют особого обращения при добыче из-за быстрого выделения газа."
+      }
+    },
+    {
+      "id": 42,
+      "english": "confidence interval",
+      "russian": "доверительный интервал",
+      "pronunciation": "ˈkän-fə-dəns ˈin-tər-vəl",
+      "partOfSpeech": "noun phrase",
+      "definition": {
+        "en": "A range of values that is likely to contain the true value of a measured quantity with a specified probability",
+        "ru": "Диапазон значений, который с заданной вероятностью содержит истинное значение измеряемой величины"
+      },
+      "example": {
+        "en": "Most PVT correlations do not provide confidence intervals unless specified by the author.",
+        "ru": "Большинство PVT-корреляций не предоставляют доверительные интервалы, если это не указано автором."
+      }
     }
   ]
 }
