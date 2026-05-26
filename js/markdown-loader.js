@@ -43,13 +43,35 @@ function markdownToHtml(markdown) {
     });
 
     try {
-        let html = marked.parse(markdown);
+        // Защищаем LaTeX-формулы до того, как marked обработает текст
+        const latexPlaceholders = [];
+
+        let protected_md = markdown;
+
+        protected_md = protected_md.replace(/\$\$([\s\S]+?)\$\$/g, (match) => {
+            const key = `LATEX_BLOCK_${latexPlaceholders.length}_ENDLATEX`;
+            latexPlaceholders.push({ key, content: match });
+            return key;
+        });
+
+        protected_md = protected_md.replace(/\$([^\$\n]+?)\$/g, (match) => {
+            const key = `LATEX_INLINE_${latexPlaceholders.length}_ENDLATEX`;
+            latexPlaceholders.push({ key, content: match });
+            return key;
+        });
+
+        let html = marked.parse(protected_md);
+
+        // Восстанавливаем LaTeX-формулы
+        latexPlaceholders.forEach(({ key, content }) => {
+            html = html.split(key).join(content);
+        });
 
         // Оборачиваем блоки кода в специальные контейнеры
-        html = html.replace(/<pre><code class="language-([^"]+)">([^<]+)<\/code><\/pre>/g, 
+        html = html.replace(/<pre><code class="language-([^"]+)">([^<]+)<\/code><\/pre>/g,
             '<pre class="code-block language-$1"><code>$2</code></pre>');
-        
-        html = html.replace(/<pre><code>([^<]+)<\/code><\/pre>/g, 
+
+        html = html.replace(/<pre><code>([^<]+)<\/code><\/pre>/g,
             '<pre class="code-block"><code>$1</code></pre>');
 
         return html;
