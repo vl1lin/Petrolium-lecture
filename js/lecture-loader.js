@@ -15,8 +15,9 @@ async function loadLecture() {
         let lectureData = null;
 
         // Пытаемся загрузить markdown файлы
-        const enMarkdown = await window.MarkdownLoader.loadMarkdownFile('lectures/lecture.en.md');
-        const ruMarkdown = await window.MarkdownLoader.loadMarkdownFile('lectures/lecture.ru.md');
+        // ИСПРАВЛЕННЫЕ ПУТИ: data/lecture_en.md и data/lecture_rus.md
+        const enMarkdown = await window.MarkdownLoader.loadMarkdownFile('data/lecture_en.md');
+        const ruMarkdown = await window.MarkdownLoader.loadMarkdownFile('data/lecture_rus.md');
 
         // Если оба файла успешно загружены
         if (enMarkdown && ruMarkdown) {
@@ -29,7 +30,7 @@ async function loadLecture() {
             };
         } else {
             // Если markdown файлов нет, используем JSON
-            console.log('📋 Загрузка из lecture.json...');
+            console.log('📋 Загрузка из data/lecture.json...');
             const response = await fetch('data/lecture.json');
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             lectureData = await response.json();
@@ -42,6 +43,10 @@ async function loadLecture() {
         // Вставляем преобразованный текст
         document.getElementById('lecture-en').innerHTML = htmlEn;
         document.getElementById('lecture-ru').innerHTML = htmlRu;
+
+        // Рендерим LaTeX формулы в обоих контейнерах
+        window.MarkdownLoader.renderMathFormulas(document.getElementById('lecture-en'));
+        window.MarkdownLoader.renderMathFormulas(document.getElementById('lecture-ru'));
 
         console.log('✓ Лекция успешно загружена и преобразована');
     } catch (error) {
