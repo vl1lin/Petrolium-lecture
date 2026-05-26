@@ -29,7 +29,7 @@ async function loadLecture() {
             };
         } else {
             // Если markdown файлов нет, используем JSON
-            console.log('📋 Загрузка из lecture.json...');
+            console.log('📋 Загрузка из data/lecture.json...');
             const response = await fetch('data/lecture.json');
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             lectureData = await response.json();
@@ -43,10 +43,9 @@ async function loadLecture() {
         document.getElementById('lecture-en').innerHTML = htmlEn;
         document.getElementById('lecture-ru').innerHTML = htmlRu;
 
-        // Рендерим LaTeX-формулы через MathJax
-        if (window.MathJax && window.MathJax.typesetPromise) {
-            await window.MathJax.typesetPromise();
-        }
+        // Рендерим LaTeX формулы в обоих контейнерах
+        window.MarkdownLoader.renderMathFormulas(document.getElementById('lecture-en'));
+        window.MarkdownLoader.renderMathFormulas(document.getElementById('lecture-ru'));
 
         console.log('✓ Лекция успешно загружена и преобразована');
     } catch (error) {
