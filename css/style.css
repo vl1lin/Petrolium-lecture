@@ -377,11 +377,133 @@ a:hover {
     color: var(--color-text-secondary);
 }
 
-.lecture-text h3 {
+.lecture-text h1,
+.lecture-text h2,
+.lecture-text h3,
+.lecture-text h4,
+.lecture-text h5,
+.lecture-text h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: var(--color-primary);
+}
+
+.lecture-text h1 {
+    font-size: 2rem;
+}
+
+.lecture-text h2 {
+    font-size: 1.75rem;
+}
+
+.lecture-text h3 {
     font-size: 1.3rem;
+}
+
+/* ============================================
+   ТАБЛИЦЫ В ЛЕКЦИЯХ
+   ============================================ */
+
+.lecture-text table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: var(--color-bg);
+    border-radius: var(--radius-small);
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.lecture-text table thead {
+    background-color: var(--color-bg-secondary);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.lecture-text table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.lecture-text table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.lecture-text table tbody tr:hover {
+    background-color: var(--color-bg-secondary);
+}
+
+/* ============================================
+   КОД И ФОРМУЛЫ
+   ============================================ */
+
+.lecture-text code {
+    background-color: var(--color-bg);
+    color: var(--color-accent-red);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.lecture-text pre {
+    background-color: var(--color-bg);
+    border-left: 4px solid var(--color-accent-blue);
+    padding: 1rem;
+    border-radius: var(--radius-small);
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.lecture-text pre code {
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    padding: 0;
+}
+
+/* LaTeX/KaTeX формулы */
+.lecture-text .katex-display {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: var(--color-bg);
+    border-radius: var(--radius-small);
+}
+
+.lecture-text .katex {
+    font-size: 1.1em;
+}
+
+/* Инлайновые формулы */
+.lecture-text .katex-inline {
+    margin: 0 0.2em;
+}
+
+/* ============================================
+   СПИСКИ В ЛЕКЦИЯХ
+   ============================================ */
+
+.lecture-text ul,
+.lecture-text ol {
+    margin: 1rem 0 1rem 2rem;
+}
+
+.lecture-text li {
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+}
+
+/* ============================================
+   ЦИТАТЫ В ЛЕКЦИЯХ
+   ============================================ */
+
+.lecture-text blockquote {
+    border-left: 4px solid var(--color-accent-gold);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: var(--color-text-secondary);
+    font-style: italic;
 }
 
 /* ============================================
@@ -585,6 +707,15 @@ a:hover {
     .lecture-content {
         padding: 1.5rem;
     }
+
+    .lecture-text table {
+        font-size: 0.9rem;
+    }
+
+    .lecture-text table th,
+    .lecture-text table td {
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -599,6 +730,18 @@ a:hover {
 
     .features {
         grid-template-columns: 1fr;
+    }
+
+    .lecture-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .lecture-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .lecture-text h3 {
+        font-size: 1.1rem;
     }
 }
 
